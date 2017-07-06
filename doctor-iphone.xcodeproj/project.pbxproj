@@ -15,7 +15,6 @@
 		1FE6EDF71F0E207800124F2E /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDF61F0E207800124F2E /* ScanViewController.m */; };
 		1FE6EDFA1F0E209C00124F2E /* KnowlegeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDF91F0E209C00124F2E /* KnowlegeViewController.m */; };
 		1FE6EDFD1F0E20B300124F2E /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDFC1F0E20B300124F2E /* PersonViewController.m */; };
-		1FE6EE001F0E2A4900124F2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE6EDFF1F0E2A4900124F2E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		1FE6EDF91F0E209C00124F2E /* KnowlegeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowlegeViewController.m; path = knowlege/KnowlegeViewController.m; sourceTree = "<group>"; };
 		1FE6EDFB1F0E20B300124F2E /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonViewController.h; path = person/PersonViewController.h; sourceTree = "<group>"; };
 		1FE6EDFC1F0E20B300124F2E /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonViewController.m; path = person/PersonViewController.m; sourceTree = "<group>"; };
-		1FE6EDFF1F0E2A4900124F2E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE6EE001F0E2A4900124F2E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +117,6 @@
 		1FE6EDFE1F0E2A4900124F2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1FE6EDFF1F0E2A4900124F2E /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +152,7 @@
 				TargetAttributes = {
 					1F2C50081F0DDD31006AC0D4 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UVAZRL8KC2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -318,7 +315,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVAZRL8KC2;
 				INFOPLIST_FILE = "doctor-iphone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hljk365.app.doctor.hd.doctor-iphone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,7 +328,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVAZRL8KC2;
 				INFOPLIST_FILE = "doctor-iphone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hljk365.app.doctor.hd.doctor-iphone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
