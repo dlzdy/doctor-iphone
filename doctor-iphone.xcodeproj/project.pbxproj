@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F2C500E1F0DDD32006AC0D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C500D1F0DDD32006AC0D4 /* main.m */; };
+		1F2C50111F0DDD32006AC0D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C50101F0DDD32006AC0D4 /* AppDelegate.m */; };
+		1F2C50171F0DDD32006AC0D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C50151F0DDD32006AC0D4 /* Main.storyboard */; };
+		1F2C50191F0DDD32006AC0D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C50181F0DDD32006AC0D4 /* Assets.xcassets */; };
+		1F2C501C1F0DDD32006AC0D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C501A1F0DDD32006AC0D4 /* LaunchScreen.storyboard */; };
+		1FE6EDF71F0E207800124F2E /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDF61F0E207800124F2E /* ScanViewController.m */; };
+		1FE6EDFA1F0E209C00124F2E /* KnowlegeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDF91F0E209C00124F2E /* KnowlegeViewController.m */; };
+		1FE6EDFD1F0E20B300124F2E /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDFC1F0E20B300124F2E /* PersonViewController.m */; };
+		1FE6EE001F0E2A4900124F2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE6EDFF1F0E2A4900124F2E /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F2C50091F0DDD32006AC0D4 /* doctor-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "doctor-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2C500D1F0DDD32006AC0D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F2C500F1F0DDD32006AC0D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F2C50101F0DDD32006AC0D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F2C50161F0DDD32006AC0D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F2C50181F0DDD32006AC0D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F2C501B1F0DDD32006AC0D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F2C501D1F0DDD32006AC0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE6EDF51F0E207800124F2E /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanViewController.h; path = scan/ScanViewController.h; sourceTree = "<group>"; };
+		1FE6EDF61F0E207800124F2E /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanViewController.m; path = scan/ScanViewController.m; sourceTree = "<group>"; };
+		1FE6EDF81F0E209C00124F2E /* KnowlegeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowlegeViewController.h; path = knowlege/KnowlegeViewController.h; sourceTree = "<group>"; };
+		1FE6EDF91F0E209C00124F2E /* KnowlegeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowlegeViewController.m; path = knowlege/KnowlegeViewController.m; sourceTree = "<group>"; };
+		1FE6EDFB1F0E20B300124F2E /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonViewController.h; path = person/PersonViewController.h; sourceTree = "<group>"; };
+		1FE6EDFC1F0E20B300124F2E /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonViewController.m; path = person/PersonViewController.m; sourceTree = "<group>"; };
+		1FE6EDFF1F0E2A4900124F2E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F2C50061F0DDD31006AC0D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE6EE001F0E2A4900124F2E /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F2C50001F0DDD31006AC0D4 = {
+			isa = PBXGroup;
+			children = (
+				1F2C500B1F0DDD32006AC0D4 /* doctor-iphone */,
+				1F2C500A1F0DDD32006AC0D4 /* Products */,
+				1FE6EDFE1F0E2A4900124F2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F2C500A1F0DDD32006AC0D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F2C50091F0DDD32006AC0D4 /* doctor-iphone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F2C500B1F0DDD32006AC0D4 /* doctor-iphone */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6EDF21F0E1FC100124F2E /* scan */,
+				1FE6EDF41F0E1FDD00124F2E /* knowlege */,
+				1FE6EDF31F0E1FD100124F2E /* person */,
+				1F2C500F1F0DDD32006AC0D4 /* AppDelegate.h */,
+				1F2C50101F0DDD32006AC0D4 /* AppDelegate.m */,
+				1F2C50151F0DDD32006AC0D4 /* Main.storyboard */,
+				1F2C50181F0DDD32006AC0D4 /* Assets.xcassets */,
+				1F2C501A1F0DDD32006AC0D4 /* LaunchScreen.storyboard */,
+				1F2C501D1F0DDD32006AC0D4 /* Info.plist */,
+				1F2C500C1F0DDD32006AC0D4 /* Supporting Files */,
+			);
+			path = "doctor-iphone";
+			sourceTree = "<group>";
+		};
+		1F2C500C1F0DDD32006AC0D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F2C500D1F0DDD32006AC0D4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FE6EDF21F0E1FC100124F2E /* scan */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6EDF51F0E207800124F2E /* ScanViewController.h */,
+				1FE6EDF61F0E207800124F2E /* ScanViewController.m */,
+			);
+			name = scan;
+			sourceTree = "<group>";
+		};
+		1FE6EDF31F0E1FD100124F2E /* person */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6EDFB1F0E20B300124F2E /* PersonViewController.h */,
+				1FE6EDFC1F0E20B300124F2E /* PersonViewController.m */,
+			);
+			name = person;
+			sourceTree = "<group>";
+		};
+		1FE6EDF41F0E1FDD00124F2E /* knowlege */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6EDF81F0E209C00124F2E /* KnowlegeViewController.h */,
+				1FE6EDF91F0E209C00124F2E /* KnowlegeViewController.m */,
+			);
+			name = knowlege;
+			sourceTree = "<group>";
+		};
+		1FE6EDFE1F0E2A4900124F2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6EDFF1F0E2A4900124F2E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F2C50081F0DDD31006AC0D4 /* doctor-iphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2C50201F0DDD32006AC0D4 /* Build configuration list for PBXNativeTarget "doctor-iphone" */;
+			buildPhases = (
+				1F2C50051F0DDD31006AC0D4 /* Sources */,
+				1F2C50061F0DDD31006AC0D4 /* Frameworks */,
+				1F2C50071F0DDD31006AC0D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "doctor-iphone";
+			productName = "doctor-iphone";
+			productReference = 1F2C50091F0DDD32006AC0D4 /* doctor-iphone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F2C50011F0DDD31006AC0D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zhangdy;
+				TargetAttributes = {
+					1F2C50081F0DDD31006AC0D4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F2C50041F0DDD31006AC0D4 /* Build configuration list for PBXProject "doctor-iphone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F2C50001F0DDD31006AC0D4;
+			productRefGroup = 1F2C500A1F0DDD32006AC0D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F2C50081F0DDD31006AC0D4 /* doctor-iphone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F2C50071F0DDD31006AC0D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2C501C1F0DDD32006AC0D4 /* LaunchScreen.storyboard in Resources */,
+				1F2C50191F0DDD32006AC0D4 /* Assets.xcassets in Resources */,
+				1F2C50171F0DDD32006AC0D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F2C50051F0DDD31006AC0D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE6EDFD1F0E20B300124F2E /* PersonViewController.m in Sources */,
+				1F2C50111F0DDD32006AC0D4 /* AppDelegate.m in Sources */,
+				1FE6EDF71F0E207800124F2E /* ScanViewController.m in Sources */,
+				1FE6EDFA1F0E209C00124F2E /* KnowlegeViewController.m in Sources */,
+				1F2C500E1F0DDD32006AC0D4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F2C50151F0DDD32006AC0D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2C50161F0DDD32006AC0D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F2C501A1F0DDD32006AC0D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2C501B1F0DDD32006AC0D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F2C501E1F0DDD32006AC0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F2C501F1F0DDD32006AC0D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F2C50211F0DDD32006AC0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "doctor-iphone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hljk365.app.doctor.hd.doctor-iphone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F2C50221F0DDD32006AC0D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "doctor-iphone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hljk365.app.doctor.hd.doctor-iphone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F2C50041F0DDD31006AC0D4 /* Build configuration list for PBXProject "doctor-iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2C501E1F0DDD32006AC0D4 /* Debug */,
+				1F2C501F1F0DDD32006AC0D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F2C50201F0DDD32006AC0D4 /* Build configuration list for PBXNativeTarget "doctor-iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2C50211F0DDD32006AC0D4 /* Debug */,
+				1F2C50221F0DDD32006AC0D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F2C50011F0DDD31006AC0D4 /* Project object */;
+}
