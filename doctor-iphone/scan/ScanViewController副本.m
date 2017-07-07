@@ -7,6 +7,8 @@
 //
 
 #import "ScanViewController.h"
+
+#import "SGQRCode.h"
 @interface ScanViewController () <AVCaptureMetadataOutputObjectsDelegate>
 @property (strong,nonatomic)AVCaptureDevice *device;
 @property (strong,nonatomic)AVCaptureDeviceInput *input;
@@ -19,16 +21,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //设置背景
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     //创建按钮，居中，点击后打开扫描
     UIButton *btnScan = [[UIButton alloc]init];
     [btnScan setTitle:@"开始扫描" forState:UIControlStateNormal];
     btnScan.frame = CGRectMake(50, 100, 150, 50);
+
     //监听点击事件
     [btnScan addTarget:self action:@selector(btnScanClick) forControlEvents:UIControlEventTouchUpInside];
     //self.view.backgroundColor= [UIColor greenColor];
     [self.view addSubview:btnScan];
 
-    [self setupCapture];
+    // 设置摄像头
+    //[self setupCapture];
+    /// 扫描二维码创建
+    SGQRCodeScanManager *manager = [SGQRCodeScanManager sharedManager];
+    NSArray *arr = @[AVMetadataObjectTypeQRCode, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code];
+    // AVCaptureSessionPreset1920x1080 推荐使用，对于小型的二维码读取率较高
+    [manager SG_setupSessionPreset:AVCaptureSessionPreset1920x1080 metadataObjectTypes:arr currentController:self];
+    manager.delegate = self;
 
 }
 
@@ -90,8 +104,9 @@
     //    NSArray *metadataObjectTypes =
     //        [[NSArray alloc]initWithObjects:@[AVMetadataObjectTypeQRCode, AVMetadataObjectTypeEAN13Code,  AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code]];
     //    _output.metadataObjectTypes = metadataObjectTypes;
-    
+    if (_input) {
     _output.metadataObjectTypes = @[AVMetadataObjectTypeQRCode, AVMetadataObjectTypeEAN13Code,  AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code];//可以运行，不错
+    }
     
     // 9、实例化预览图层, 传递_session是为了告诉图层将来显示什么内容
     _preview = [AVCaptureVideoPreviewLayer layerWithSession:_session];
@@ -103,6 +118,14 @@
  * 扫描成功返回字符串
  */
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
+    if (metadataObjects.count > 0) {
+        AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
+        NSLog(@"scan result = %@", metadataObj.stringValue);
+    }
+}
+
+/// 二维码扫描获取数据的回调方法
+- (void)QRCodeScanManager:(SGQRCodeScanManager *)scanManager didOutputMetadataObjects:(NSArray *)metadataObjects{
     if (metadataObjects.count > 0) {
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
         NSLog(@"scan result = %@", metadataObj.stringValue);

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ScanViewController.h"
+#import "QRCodeScanningVC.h"
 #import "KnowlegeViewController.h"
 #import "PersonViewController.h"
 
@@ -27,16 +27,19 @@
     
     //3.创建相应的子控制器（viewcontroller）
     //3.1 扫一扫
-    ScanViewController *scanVC = [[ScanViewController alloc]init];
+    QRCodeScanningVC *scanVC = [[QRCodeScanningVC alloc]init];
     //UITabBarItem *vc1BarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemContacts tag:0];
     scanVC.tabBarItem.title = @"扫一扫";
+    scanVC.tabBarItem.image = [UIImage imageNamed:@"scan"];
     //vc1.tabBarItem.image =  [UIImage init UIBarButtonSystemItemRedo];
     //3.2 知识库
     KnowlegeViewController *knowlegeVC = [[KnowlegeViewController alloc]init];
     knowlegeVC.tabBarItem.title = @"知识库";
+    knowlegeVC.tabBarItem.image = [UIImage imageNamed:@"knowlege"];
     //3.3 我的
     PersonViewController *personVC = [[PersonViewController alloc]init];
     personVC.tabBarItem.title = @"我的";
+    personVC.tabBarItem.image = [UIImage imageNamed:@"person"];
     
     //4.把子控制器添加到UITabBarController
     NSArray *vcs = [NSArray arrayWithObjects:scanVC, knowlegeVC, personVC, nil];

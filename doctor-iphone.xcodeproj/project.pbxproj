@@ -7,17 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0E21091F0F54BB000B155C /* UIImage+SGHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E20FE1F0F54BB000B155C /* UIImage+SGHelper.m */; };
+		1F0E210A1F0F54BB000B155C /* SGQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F0E20FF1F0F54BB000B155C /* SGQRCode.bundle */; };
+		1F0E210B1F0F54BB000B155C /* SGQRCodeAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E21021F0F54BB000B155C /* SGQRCodeAlbumManager.m */; };
+		1F0E210C1F0F54BB000B155C /* SGQRCodeGenerateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E21041F0F54BB000B155C /* SGQRCodeGenerateManager.m */; };
+		1F0E210D1F0F54BB000B155C /* SGQRCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E21061F0F54BB000B155C /* SGQRCodeScanManager.m */; };
+		1F0E210E1F0F54BB000B155C /* SGQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E21081F0F54BB000B155C /* SGQRCodeScanningView.m */; };
 		1F2C500E1F0DDD32006AC0D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C500D1F0DDD32006AC0D4 /* main.m */; };
 		1F2C50111F0DDD32006AC0D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C50101F0DDD32006AC0D4 /* AppDelegate.m */; };
 		1F2C50171F0DDD32006AC0D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C50151F0DDD32006AC0D4 /* Main.storyboard */; };
 		1F2C50191F0DDD32006AC0D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C50181F0DDD32006AC0D4 /* Assets.xcassets */; };
 		1F2C501C1F0DDD32006AC0D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C501A1F0DDD32006AC0D4 /* LaunchScreen.storyboard */; };
-		1FE6EDF71F0E207800124F2E /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDF61F0E207800124F2E /* ScanViewController.m */; };
+		1FE6EDF71F0E207800124F2E /* QRCodeScanningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDF61F0E207800124F2E /* QRCodeScanningVC.m */; };
 		1FE6EDFA1F0E209C00124F2E /* KnowlegeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDF91F0E209C00124F2E /* KnowlegeViewController.m */; };
 		1FE6EDFD1F0E20B300124F2E /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6EDFC1F0E20B300124F2E /* PersonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0E20FD1F0F54BB000B155C /* UIImage+SGHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGHelper.h"; sourceTree = "<group>"; };
+		1F0E20FE1F0F54BB000B155C /* UIImage+SGHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGHelper.m"; sourceTree = "<group>"; };
+		1F0E20FF1F0F54BB000B155C /* SGQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGQRCode.bundle; sourceTree = "<group>"; };
+		1F0E21001F0F54BB000B155C /* SGQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCode.h; sourceTree = "<group>"; };
+		1F0E21011F0F54BB000B155C /* SGQRCodeAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeAlbumManager.h; sourceTree = "<group>"; };
+		1F0E21021F0F54BB000B155C /* SGQRCodeAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeAlbumManager.m; sourceTree = "<group>"; };
+		1F0E21031F0F54BB000B155C /* SGQRCodeGenerateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeGenerateManager.h; sourceTree = "<group>"; };
+		1F0E21041F0F54BB000B155C /* SGQRCodeGenerateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeGenerateManager.m; sourceTree = "<group>"; };
+		1F0E21051F0F54BB000B155C /* SGQRCodeScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanManager.h; sourceTree = "<group>"; };
+		1F0E21061F0F54BB000B155C /* SGQRCodeScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanManager.m; sourceTree = "<group>"; };
+		1F0E21071F0F54BB000B155C /* SGQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanningView.h; sourceTree = "<group>"; };
+		1F0E21081F0F54BB000B155C /* SGQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningView.m; sourceTree = "<group>"; };
 		1F2C50091F0DDD32006AC0D4 /* doctor-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "doctor-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2C500D1F0DDD32006AC0D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F2C500F1F0DDD32006AC0D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,8 +44,8 @@
 		1F2C50181F0DDD32006AC0D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F2C501B1F0DDD32006AC0D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F2C501D1F0DDD32006AC0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FE6EDF51F0E207800124F2E /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanViewController.h; path = scan/ScanViewController.h; sourceTree = "<group>"; };
-		1FE6EDF61F0E207800124F2E /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanViewController.m; path = scan/ScanViewController.m; sourceTree = "<group>"; };
+		1FE6EDF51F0E207800124F2E /* QRCodeScanningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCodeScanningVC.h; path = scan/QRCodeScanningVC.h; sourceTree = "<group>"; };
+		1FE6EDF61F0E207800124F2E /* QRCodeScanningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCodeScanningVC.m; path = scan/QRCodeScanningVC.m; sourceTree = "<group>"; };
 		1FE6EDF81F0E209C00124F2E /* KnowlegeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowlegeViewController.h; path = knowlege/KnowlegeViewController.h; sourceTree = "<group>"; };
 		1FE6EDF91F0E209C00124F2E /* KnowlegeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowlegeViewController.m; path = knowlege/KnowlegeViewController.m; sourceTree = "<group>"; };
 		1FE6EDFB1F0E20B300124F2E /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonViewController.h; path = person/PersonViewController.h; sourceTree = "<group>"; };
@@ -45,6 +63,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0E20FB1F0F54BB000B155C /* SGQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E20FC1F0F54BB000B155C /* Category */,
+				1F0E20FF1F0F54BB000B155C /* SGQRCode.bundle */,
+				1F0E21001F0F54BB000B155C /* SGQRCode.h */,
+				1F0E21011F0F54BB000B155C /* SGQRCodeAlbumManager.h */,
+				1F0E21021F0F54BB000B155C /* SGQRCodeAlbumManager.m */,
+				1F0E21031F0F54BB000B155C /* SGQRCodeGenerateManager.h */,
+				1F0E21041F0F54BB000B155C /* SGQRCodeGenerateManager.m */,
+				1F0E21051F0F54BB000B155C /* SGQRCodeScanManager.h */,
+				1F0E21061F0F54BB000B155C /* SGQRCodeScanManager.m */,
+				1F0E21071F0F54BB000B155C /* SGQRCodeScanningView.h */,
+				1F0E21081F0F54BB000B155C /* SGQRCodeScanningView.m */,
+			);
+			path = SGQRCode;
+			sourceTree = "<group>";
+		};
+		1F0E20FC1F0F54BB000B155C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E20FD1F0F54BB000B155C /* UIImage+SGHelper.h */,
+				1F0E20FE1F0F54BB000B155C /* UIImage+SGHelper.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		1F2C50001F0DDD31006AC0D4 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +110,7 @@
 		1F2C500B1F0DDD32006AC0D4 /* doctor-iphone */ = {
 			isa = PBXGroup;
 			children = (
+				1F0E20FB1F0F54BB000B155C /* SGQRCode */,
 				1FE6EDF21F0E1FC100124F2E /* scan */,
 				1FE6EDF41F0E1FDD00124F2E /* knowlege */,
 				1FE6EDF31F0E1FD100124F2E /* person */,
@@ -90,8 +136,8 @@
 		1FE6EDF21F0E1FC100124F2E /* scan */ = {
 			isa = PBXGroup;
 			children = (
-				1FE6EDF51F0E207800124F2E /* ScanViewController.h */,
-				1FE6EDF61F0E207800124F2E /* ScanViewController.m */,
+				1FE6EDF51F0E207800124F2E /* QRCodeScanningVC.h */,
+				1FE6EDF61F0E207800124F2E /* QRCodeScanningVC.m */,
 			);
 			name = scan;
 			sourceTree = "<group>";
@@ -183,6 +229,7 @@
 				1F2C501C1F0DDD32006AC0D4 /* LaunchScreen.storyboard in Resources */,
 				1F2C50191F0DDD32006AC0D4 /* Assets.xcassets in Resources */,
 				1F2C50171F0DDD32006AC0D4 /* Main.storyboard in Resources */,
+				1F0E210A1F0F54BB000B155C /* SGQRCode.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,10 +241,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE6EDFD1F0E20B300124F2E /* PersonViewController.m in Sources */,
+				1F0E210D1F0F54BB000B155C /* SGQRCodeScanManager.m in Sources */,
+				1F0E210B1F0F54BB000B155C /* SGQRCodeAlbumManager.m in Sources */,
+				1F0E210C1F0F54BB000B155C /* SGQRCodeGenerateManager.m in Sources */,
 				1F2C50111F0DDD32006AC0D4 /* AppDelegate.m in Sources */,
-				1FE6EDF71F0E207800124F2E /* ScanViewController.m in Sources */,
+				1F0E210E1F0F54BB000B155C /* SGQRCodeScanningView.m in Sources */,
+				1FE6EDF71F0E207800124F2E /* QRCodeScanningVC.m in Sources */,
 				1FE6EDFA1F0E209C00124F2E /* KnowlegeViewController.m in Sources */,
 				1F2C500E1F0DDD32006AC0D4 /* main.m in Sources */,
+				1F0E21091F0F54BB000B155C /* UIImage+SGHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hljk365.app.doctor.hd.doctor-iphone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,6 +387,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hljk365.app.doctor.hd.doctor-iphone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
