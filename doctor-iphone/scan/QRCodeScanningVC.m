@@ -51,7 +51,7 @@
     //增加全屏预览+扫描框
     [self.scanningView addTimer];
     
-    [_manager SG_startRunning];
+    [_manager startRunning];
 }
 
 /**
@@ -61,7 +61,7 @@
     [super viewWillDisappear:animated];
     NSLog(@"viewWillDisappear");
     
-    [_manager SG_stopRunning];//停止扫描
+    [_manager stopRunning];//停止扫描
     [self removeScanningView];//
 }
 
@@ -77,7 +77,7 @@
 - (void)btnScanClick {
     //打开二维码扫描
     NSLog(@"开始二维码扫描");
-    [_manager SG_startRunning];
+    [_manager startRunning];
 
 }
 
@@ -90,10 +90,10 @@
         NSLog(@"scan result = %@", metadataObj.stringValue);
         
         // 播放声音
-        [scanManager SG_palySoundName:@"SGQRCode.bundle/sound.caf"];
+        [scanManager palySoundName:@"SGQRCode.bundle/sound.caf"];
         
         // 停止扫描
-        [scanManager SG_stopRunning];
+        [scanManager stopRunning];
         
         // 删除定时器，停止扫描动画
         [self removeScanningView];
@@ -119,7 +119,7 @@
 - (void)setupQRCodeScanning{
     _manager = [SGQRCodeScanManager sharedManager];
     NSArray *arr = @[AVMetadataObjectTypeQRCode, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code];
-    [_manager SG_setupSessionPreset:AVCaptureSessionPreset1920x1080 metadataObjectTypes:arr currentController:self];
+    [_manager setupSessionPreset:AVCaptureSessionPreset1920x1080 metadataObjectTypes:arr currentController:self];
     _manager.delegate = self;
 }
 

@@ -36,6 +36,8 @@ static CGFloat const scanninglineHeight = 12;
 /** 扫描内容外部View的alpha值 */
 static CGFloat const scanBorderOutsideViewAlpha = 0.4;
 
+UIButton *btnLight;
+
 - (CALayer *)tempLayer {
     if (!_tempLayer) {
         _tempLayer = [[CALayer alloc] init];
@@ -127,19 +129,19 @@ static CGFloat const scanBorderOutsideViewAlpha = 0.4;
     [self addSubview:promptLabel];
     
     // 添加闪光灯按钮
-    UIButton *light_button = [[UIButton alloc] init];
+    btnLight = [[UIButton alloc] init];
     CGFloat light_buttonX = 0;
     CGFloat light_buttonY = CGRectGetMaxY(promptLabel.frame) + scanContent_X * 0.5;
     CGFloat light_buttonW = self.frame.size.width;
     CGFloat light_buttonH = 25;
-    light_button.frame = CGRectMake(light_buttonX, light_buttonY, light_buttonW, light_buttonH);
-    [light_button setTitle:@"打开照明灯" forState:UIControlStateNormal];
-    [light_button setTitle:@"关闭照明灯" forState:UIControlStateSelected];
-    [light_button setTitleColor:promptLabel.textColor forState:(UIControlStateNormal)];
-    light_button.titleLabel.font = [UIFont systemFontOfSize:17];
+    btnLight.frame = CGRectMake(light_buttonX, light_buttonY, light_buttonW, light_buttonH);
+    [btnLight setTitle:@"打开照明灯" forState:UIControlStateNormal];
+    [btnLight setTitle:@"关闭照明灯" forState:UIControlStateSelected];
+    [btnLight setTitleColor:promptLabel.textColor forState:(UIControlStateNormal)];
+    btnLight.titleLabel.font = [UIFont systemFontOfSize:17];
     
-    [light_button addTarget:self action:@selector(light_buttonAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:light_button];
+    [btnLight addTarget:self action:@selector(light_buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:btnLight];
     
 #pragma mark - - - 扫描边角imageView的创建
     // 左上侧的image
@@ -193,19 +195,21 @@ static CGFloat const scanBorderOutsideViewAlpha = 0.4;
 - (void)light_buttonAction:(UIButton *)button {
     if (button.selected == NO) { // 点击打开照明灯
         [self turnOnLight:YES];
-        button.selected = YES;
+        
     } else { // 点击关闭照明灯
         [self turnOnLight:NO];
-        button.selected = NO;
+        
     }
+    [self turnOnLight:button.selected];
 }
-- (void)turnOnLight:(BOOL)on {
+- (void)turnOnLight:(BOOL)on{
     self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if ([_device hasTorch]) {
         [_device lockForConfiguration:nil];
-        if (on) {
+        btnLight.selected = on;
+        if (on) {// 点击打开照明灯
             [_device setTorchMode:AVCaptureTorchModeOn];
-        } else {
+        } else {// 点击关闭照明灯
             [_device setTorchMode: AVCaptureTorchModeOff];
         }
         [_device unlockForConfiguration];
