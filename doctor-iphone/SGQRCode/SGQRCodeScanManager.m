@@ -94,20 +94,20 @@ static SGQRCodeScanManager *_instance;
     }
 }
 
-- (void)SG_startRunning {
+- (void)startRunning {
     [_session startRunning];
 }
 
-- (void)SG_stopRunning {
+- (void)stopRunning {
     [_session stopRunning];
-    _session = nil;
+    //_session = nil;
 }
 
-- (void)SG_videoPreviewLayerRemoveFromSuperlayer {
+- (void)videoPreviewLayerRemoveFromSuperlayer {
     [_videoPreviewLayer removeFromSuperlayer];
 }
 
-- (void)SG_palySoundName:(NSString *)name {
+- (void)palySoundName:(NSString *)name {
     NSString *audioFile = [[NSBundle mainBundle] pathForResource:name ofType:nil];
     NSURL *fileUrl = [NSURL fileURLWithPath:audioFile];
     
